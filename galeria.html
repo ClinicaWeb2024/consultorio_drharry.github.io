@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeria</title>
+  <link rel="icon" href="assets/images/diente.png">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carrusel.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Función que muestra una alerta al cargar la página
+        function mostrarAlerta() {
+            Swal.fire({
+                title: "Advertencia",
+                text: "Esta página contiene contenido sensible. Se recomienda discreción.",
+                icon: "warning",
+                confirmButtonText: "Aceptar"
+            });
+        }
+
+        // Añadir un evento para mostrar la alerta cuando la página se cargue
+        window.onload = mostrarAlerta;
+    </script>
+</head>
+<body>
+  <div id="content-wrapper">
+    <header class="header header--bg">
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="#"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="index.html">INICIO</a></li>
+              <li><a href="#servicios">SERVICIOS</a></li>
+              <li><a href="#acerca">ACERCA</a></li>
+              <li><a href="#">CONTACTO</a></li>
+              <li><a href="https://wa.me/525528023030?text=Hola%20quiero%20agendar%20una%20cita" target="_blank">
+                AGENDA UNA CITA
+            </a>
+          </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col-lg-6">
+            <img class="img-responsive, breathing-image" src="assets/images/diente.png" alt="" style="width: 400px; height: 250px;"> <br><br>
+
+            <h3 class="page-section__subtitle--white, wave-text">
+              <span>L</span><span>L</span><span>Á</span><span>M</span><span>A</span><span>N</span><span>O</span><span>S</span><br>
+            </h3> <br>
+            <a class="page-section__subtitle--white" href="tel:+525590302400">5590302400</a>
+            <a class="page-section__subtitle--white" href="tel:+525552172016">5552172016</a> 
+
+            <h3 class="page-section__subtitle--white, animated-text">ESCRÍBENOS:</h3> 
+            <a class="page-section__subtitle--white" href="mailto:clínica_dr.Harry75@yahoo.com.com?subject=Consulta%20sobre%20nuestros%20servicios&body=Hola,%20me%20gustaría%20recibir%20más%20información%20sobre%20sus%20servicios.">clínica_dr.Harry75@yahoo.com</a> <br>
+          
+          </div>
+          <br>
+          <div class="col-lg-6 header__content">
+            <h1 class="title">Descubre más de nuestro servicio</h1>
+            <span class="title-style"></span> <br><br>
+            <p>ㅤㅤExcelencia dental con un profesional altamente capacitado, dedicado a crear la sonrisa más bella y saludable para ti</p>
+            <a class="header__button" href="#acerca">LEER MÁS</a>
+            <a class="header__button" href="#contacto">DESCUBRIR</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Carrusel-->
+    <div class="wrapper">
+      <div class="slider" id="slider">
+        <ul class="slides">
+          <li class="slide" id="slide1">
+            <a href="#servicios">
+              <p class="caption">Cirujias</p>
+              <img src="assets/images/cirujia.jpg" alt="photo 1">
+            </a>
+          </li>
+          <li class="slide" id="slide2">
+            <a href="#endodoncias">
+              <p class="caption">Endodoncias</p>
+              <img src="assets/images/endodoncia.jpg" alt="photo 2">
+            </a>
+          </li>
+          <li class="slide" id="slide3">
+            <a href="#rayos">
+              <p class="caption">Rayos X</p>
+              <img src="assets/images/rx.jpg" alt="photo 3">
+            </a>
+          </li>
+          <li class="slide" id="slide4">
+            <a href="#peridoncias">
+              <p class="caption">Periodoncias</p>
+              <img src="assets/images/peridoncia.jpg" alt="photo 4">
+            </a>
+          </li>
+          <li class="slide" id="slide5">
+            <a href="#protesis">
+               <p class="caption">Protesis</p>
+               <img src="assets/images/protesis.jpg" alt="photo 5">
+            </a>
+          </li>
+          <!--
+          <li class="slide6" id="slide6">
+            <a href="#">
+              <p class="caption">Limpieza</p>
+              <img src="assets/images/limpieza.jpg" alt="photo 6">
+            </a>
+          </li>
+          -->
+        </ul>
+        <ul class="slider-controler">
+          <li><a href="#slide1">&bullet;</a></li>
+          <li><a href="#slide2">&bullet;</a></li>
+          <li><a href="#slide3">&bullet;</a></li>
+          <li><a href="#slide4">&bullet;</a></li>
+          <li><a href="#slide5">&bullet;</a></li>
+          <!--
+          <li><a href="#slide6">&bullet;</a></li>-->
+        </ul>
+      </div>
+    </div>
+<!--Fin Carrusel-->
+
+<section class="team team--bg" id="servicios">
+  <div class="container">
+    <div class="page-section text-center">
+      <h2 class="page-section__title">Atención Personalizada</h2>
+      <div class="page-section__title-style">
+        <span class="first-line"></span>
+        <span class="second-line"></span>
+      </div>
+      <!--SERVICIO 1-->
+      <h1 >CIRUJIAS</h1>
+      <p class="page-section__subtitle">Exodoncias, Injertos      </p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-first">
+            <img src="assets/images/cirujias/1.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>Exodoncia Simple</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single">
+            <img src="assets/images/cirujias/2.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>Extracción de dientes</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/cirujias/3.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>No requieren de una cirugía compleja</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/cirujias/4.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/cirujias/5.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/cirujias/6.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+      </div>  
+      </div>
+      </section>
+              <!--FIN SERVICIO 1-->
+              <!--SERVICIO-->
+<section class=" form--bg" id="endodoncias">
+  <div class="container">
+    <div class="page-section text-center">
+      <h1 class="video__title">ENDODONCIAS</h1>
+      <p class="page-section__subtitle--white">Dolor, Abscesos</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-first">
+            <img src="assets/images/endodoncia/1.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">Abseso dentar</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single">
+            <img src="assets/images/endodoncia/2.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/endodoncia/3.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/endodoncia/4.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/endodoncia/5.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+              <!--FIN SERVICIO-->
+        <!--SERVICIO-->
+<section class="team team--bg" id="rayos">
+  <div class="container">
+    <div class="page-section text-center">
+      <h1 >Rayos X      </h1>
+      <p class="page-section__subtitle">Radiovisográfo</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-first">
+            <img src="assets/images/rx.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single">
+            <img src="assets/images/rx.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+              <!--FIN SERVICIO-->
+                <!--SERVICIO-->
+<section class=" form--bg" id="periodoncia">
+  <div class="container">
+    <div class="page-section text-center">
+      <h1 class="video__title">Periodoncias</h1>
+      <p class="page-section__subtitle--white">Movilidad, Sencibilidad, Gingivitis</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-first">
+            <img src="assets/images/peridoncia/1.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single">
+            <img src="assets/images/peridoncia/2.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia/3.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia/4.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia/5.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia/6.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+              <!--FIN SERVICIO-->
+        <!--SERVICIO-->
+<section class="team team--bg" id="protesis">
+  <div class="container">
+    <div class="page-section text-center">
+      <h1 >Prótesis</h1>
+      <p class="page-section__subtitle">Zirconio, Porcelanas, Removibles</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-first">
+            <img src="assets/images/endodoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single">
+            <img src="assets/images/rx.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+              <!--FIN SERVICIO-->
+                      <!--SERVICIO-->
+<section class="form--bg" id="limpiezas">
+  <div class="container">
+    <div class="page-section text-center">
+      <h1 class="video__title">Limpiezas</h1>
+      <p class="page-section__subtitle--white">C/Ultrasonido</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-first">
+            <img src="assets/images/endodoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single">
+            <img src="assets/images/rx.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p class="page-section__subtitle--white">LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+              <!--FIN SERVICIO-->
+        <!--SERVICIO-->
+<section id="resinas">
+  <div class="container">
+    <div class="page-section text-center">
+      <h1 >Resinas, Blanqueamientos</h1>
+      <p class="page-section__subtitle">Texto explicando el servicio</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-first">
+            <img src="assets/images/endodoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single">
+            <img src="assets/images/rx.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center steps__single steps__single-last">
+            <img src="assets/images/peridoncia.jpg" alt="" style="width: 300px; height: 150px;">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
+        </div>
+        <a class="button" href="#">Agendar cita</a>
+
+      </div>
+    </div>
+  </section>
+              <!--FIN SERVICIO-->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="team team--bg" id="acerca">
+  <div class="container">
+    <div class="page-section">
+      <div class="text-center">
+        <h2 class="page-section__title">Dr. Harry Cruz Rodríguez</h2> <br>
+        <div class="team__title-style">
+          <span class="first-line"></span>
+          <span class="second-line"></span>
+        </div>
+        <p class="page-section__subtitle">Todo acerca del doctor</p><br>
+      </div>
+      <br><br><br>
+      <div class="row gutters-80">
+        <div class="col-md-4">
+          <div class="thumbnail team__single">
+            <div class="bio text-center">
+              <img src="assets/images/endodoncia.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail team__single">
+            <div class="bio text-center">
+              <img src="assets/images/peridoncia.jpg" alt="">
+            </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail team__single">
+              <div class="bio text-center">
+                <img src="assets/images/limpieza.jpg" alt="">
+              </div>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="thumbnail team__single">
+                <div class="bio text-center">
+                  <img src="assets/images/endodoncia.jpg" alt="">
+                </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="thumbnail team__single">
+                  <div class="bio text-center">
+                    <img src="assets/images/cirujia.jpg" alt="">
+                  </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="thumbnail team__single">
+                    <div class="bio text-center">
+                      <img src="assets/images/rx.jpg" alt="">
+                    </div>
+                    </div>
+                  </div>
+        
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="video video--bg">
+  <div class="container">
+    <div class="page-section">
+      <div class="row">
+        <div class="col-md-7 video__left">
+          <a data-toggle="modal" data-target="#myModal" href="#"><i class="material-icons">play_circle_filled</i></a>
+        </div>
+        <div class="col-md-5">
+          <div class="video__right text-center">
+            <h2 class="video__title">Watch the video</h2>
+            <div class="video__title-style">
+              <span class="first-line"></span>
+              <span class="second-line"></span>
+            </div>
+            <h1 class="wave-text">
+              <span>L</span><span>L</span><span>Á</span><span>M</span><span>A</span><span>N</span><span>O</span><span>S</span><br>
+          </h1>
+            <a class="button button--white" href="#">TRY NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- video-popup -->
+<div class="container">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" frameborder="0" allowfullscreen="" id="video"  allowscriptaccess="always"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- video-popup-end -->
+
+
+    <footer class="footer footer--bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer__left">
+            <a class="navbar-brand" href="#"></a>
+            <p><span>&copy;</span> Clinica de Especialidades Odontologicas 2024</p>
+          </div>
+          <div class="col-md-2 footer__link">
+            <li><a href="#">Link goes here</a></li>
+            <li><a href="#">Another Link Here</a></li>
+            <li><a href="#">Your Text Here</a></li>
+            <li><a href="#">lorem ipsum dolor amet</a></li>
+          </div>
+          <div class="col-md-2 footer__link">
+            <li><a href="#">Link goes here</a></li>
+            <li><a href="#">Another Link Here</a></li>
+            <li><a href="#">Your Text Here</a></li>
+            <li><a href="#">lorem ipsum dolor amet</a></li>
+          </div>
+          <div class="col-md-4 footer__social-icons">
+            <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+            <li><a href="#"><i class="flaticon-twitter-logo-silhouette"></i></a></li>
+            <li><a href="#"><i class="flaticon-google-plus"></i></a></li>
+            <li><a href="#"><i class="flaticon-pinterest-logo"></i></a></li>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- <script src="assets/owl-slider/owl.carousel.min.js"></script> -->
+
+  <script>
+    $(document).ready(function() {
+      
+      $('button').click( function(e) {
+        $('.collapse').collapse('hide');
+      });
+      
+    });
+  </script>
+</body>
+</html>  
+
